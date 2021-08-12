@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>密码登录</title>
+    <link rel="stylesheet" href="pswLogin.css">
+</head>
+<body>
+<div class="pc">
+    <aside>
+        <img src="./../../public/resources/logo.png">
+        <p>成为更好的自己</p>
+    </aside>
+    <main class="pc-main">
+        <div class="pc-line">
+            <p>邮箱</p>
+            <input placeholder="请输入邮箱..." type="email" class="email">
+        </div>
+        <div class="pc-line">
+            <p>密码</p>
+            <input placeholder="请输入密码..." type="password" class="psw">
+        </div>
+        <div class="pc-otherLogin">
+            <a href="./emailLogin.html" class="emailLogin">验证码登录</a>
+            <a href="./register.html" class="registerBtn">注册</a>
+        </div>
+        <button class="pc-loginBtn loginBtn">
+            登录
+        </button>
+    </main>
+</div>
+<div class="mobile">
+    <header>
+        <p id="pswLogin">密码登录</p>
+        <p class="emailLogin">邮箱登录</p>
+    </header>
+    <main class="mobile-main">
+        <div class="firstLine">
+            <p>邮箱</p>
+            <input placeholder="请输入邮箱..." type="email" class="email">
+        </div>
+        <div class="secondLine">
+            <p>密码</p>
+            <input placeholder="请输入密码..." type="password" class="psw">
+        </div>
+        <a href="/view/mobile/register.html" class="registerBtn">还没注册？去注册</a>
+    </main>
+    <footer>
+        <button class="loginBtn">
+            登录
+        </button>
+    </footer>
+</div>
+<script src="pswLogin.js"></script>
+<script src="ajax.js"></script>
+<script src="api.js"></script>
+</body>
+</html>
